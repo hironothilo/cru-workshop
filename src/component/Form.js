@@ -2,7 +2,7 @@ import React, { useState } from 'react'//rafc พิมอย่างงงี�
 //label ช่องสี่เหลี่ยมใส่อะไรซักอย่าง
 //รับข้อมูลเป็นอะไร type
 
-const Form = () => {
+const Form = (props) => {
     const [title, setTitle] = useState('')
     const [amount, setAmount] = useState('')
     const addList = (event)=>{
