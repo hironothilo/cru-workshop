@@ -1,3 +1,11 @@
+# How to เข้า github ยัดอะไรซักอย่างใน github
+1.โหลด git grahp ใน extension
+2.กดsource control แล้วหารูปคล้ายๆโลโก้git grahp เล็กๆหน่อย
+3. user ditail
+4.remote อะไรซักอย่าง
+5.พิมพ์ในอะไรซักอย่าง แล้วกด commit
+6.เข้าgithub ตึงๆ
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
