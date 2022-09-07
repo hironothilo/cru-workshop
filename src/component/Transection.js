@@ -7,6 +7,10 @@ const Transection = (props) => {
                     <li key={index}>
                         <span className="itemleft">{element.title}</span>
                         <span className="itemright">{element.amount}</span>
+                        {setTitle("")}
+                        {setAmount("")}
+                        {value={title}}
+                        {value={amount}}
                     </li>
                 ))}
             </ul>
