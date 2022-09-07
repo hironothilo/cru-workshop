@@ -11,6 +11,9 @@ function App() {
   }
   return (
     <>
+      <ul>
+        {item.map((item,index) =><li key={index}>{item.title}</li>)}
+      </ul>
       <Form addItem={addItem}/>
     </>
   );

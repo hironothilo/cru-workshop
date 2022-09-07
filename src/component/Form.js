@@ -31,7 +31,7 @@ const Form = (props) => {
                 <button type="submit" 
                 className="btn btn-primarytext"
                 name="submit">
-                เพิ่มข้อมู
+                เพิ่มข้อมูล
                 </button>
             </div>
         </form>
