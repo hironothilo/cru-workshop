@@ -27,6 +27,7 @@ const Form = (props) => {
                 <label>จำนวน</label>
                 <input type="number" placeholder="ใส่จำนวนรายการตึงๆ" name="amount" onChange={(event) => setAmount(event.target.value)}/>
             </div>
+            
             <div>
                 <button type="submit" 
                 className="btn btn-primarytext"
