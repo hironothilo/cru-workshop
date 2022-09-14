@@ -1,7 +1,6 @@
 import React, { useState } from 'react'//rafc พิมอย่างงงี้
 //label ช่องสี่เหลี่ยมใส่อะไรซักอย่าง
 //รับข้อมูลเป็นอะไร type
-
 const Form = (props) => {
     const [title, setTitle] = useState('')
     const [amount, setAmount] = useState('')
@@ -13,6 +12,10 @@ const Form = (props) => {
         }
         props.additem(listData)
     }
+    const listData = {
+        id: String(Date.now()), //ใช้Date.now เพราะจะเป็นการส่งค่ามิลลิวินาทีที่นับมาตั้งแต่ปี 1 มกราคม 1970 **ถ้าใช้งานเก็บค่าในฐานข้อมูลหรือไม่ใช่standaloneให้เปลี่ยนไปใช้ uuidจะดีกว่าเพื่อป้องกันidซ้ำกัน
+        amount: Number(amount),
+      };
   return (
     <>
         <form onSubmit={addList}>

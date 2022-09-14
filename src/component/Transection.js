@@ -7,8 +7,11 @@ const Transection = (props) => {
       setValid(amount.trim().length>0 && title.trim().length>0 && Number(amount)!=0)
     }, [title,amount])
     disabled = !valid
-    //disabled = {!valid}
-    
+    const removeItem = (e) => {
+        const id = e.target.getAttribute('name');
+            props.deleteItem(id);
+            
+    };
     return (
         <div>
             <ul className="item ">
@@ -22,6 +25,11 @@ const Transection = (props) => {
                         {value={amount}}
                     </li>
                 ))}
+                <li key={element.id}>
+                    <button onClick={removeItem} name={element.id}>
+                        X
+                    </button>
+                </li>
             </ul>
         </div>
     );
