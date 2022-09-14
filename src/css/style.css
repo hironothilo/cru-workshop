@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+
+}
+.icondel{
+    background-color: transparent;  
+    border: none;
+    padding-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #121212;
+    cursor: pointer;
+    color: red;
+}
+.function{
+    cursor: pointer;
+}
+body{
+    background-color: azure;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin : 0;
+}
+.container{
+    margin: 30 auto;
+    width: 350px;
+}
+.h1{
+    font-family: 'Itim', cursive;
+    text-align:center;
+    color:red;
+    font-size: 1.5rem;
+}
+.item{
+    color:blue;
+    list-style-type: none;
+    margin-bottom: 40px;
+    padding:0;
+}
+.itemleft{
+    display: block;
+    text-align:left; 
+}
+.itemright{
+    display: block;
+    text-align:right; 
+}
+.item li{
+    font-family: 'Chakra Petch', sans-serif;
+    width: 350px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display:flex;
+    justify-content:space-between;
+    margin-top: 5px;
+    
+}
+
+label{
+    display: inline-block;
+    margin: 10px 0;
+}
+input{
+    border: 1px solid #121212;
+    border-radius: 3px;
+    display: block;
+    font-size:14px;
+    padding: 10px;
+    width:100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 40px;
+}
+input:focus{
+    outline:none;
+}
+.btn{
+    background-color: rgb(234, 140, 17);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 10px 0 30px;
+    padding: 7px;
+    width: 100%;
+    outline:none;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+button:disabled,
+button[disabled]{
+  background-color: #cccccc;
+  color: #666666;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+
+.expenses{
+    border-right: 10px solid red;  
+}
+.income{
+    border-right: 10px solid #2ccc71;  
+    
+}
+.reportexpense{
+    color: red;
+    
+    text-align: right;
+}
+.reportincome{
+    color: #2ccc71;
+    
+    text-align: left;
+}
+.reportcontainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+}
+.reportcontainer>div{
+    margin-left: 10px;
+    width: 100%;
+}
+.reportcontainer>div:first-of-type{
+    border-right: 3px solid #dedede
+}
+.reportcontainer>div:last-of-type{
+    text-align: right;
+}
+
+.horizontal-menu{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: #5c7ad5;
+   
+}
+.horizontal-menu li{
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    
+}
+.horizontal-menu li{
+    color: #fff;
+    text-decoration: none;
+    padding: 20px
+}
+.horizontal-menu li:first-of-type{
+    border-right : 3px solid #fff;
+}
+.editor{
+    border: 1px solid #121212;
+    border-radius: 3px;
+    display: block;
+    font-size:14px;
+    padding: 10px;
+    width:40%;
+    height: 25px;
+}
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }

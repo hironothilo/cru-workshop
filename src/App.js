@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import  Form  from './component/Form';
+import './css/style.css';
 
 function App() {
   const [item, setItem] = useState([]);

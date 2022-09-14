@@ -7,15 +7,12 @@ const Form = (props) => {
     const addList = (event)=>{
         event.preventDefault()
         const listData = {
+            id: String(Date.now()),
             title:title,
             amount:Number(amount)
         }
         props.additem(listData)
     }
-    const listData = {
-        id: String(Date.now()), //ใช้Date.now เพราะจะเป็นการส่งค่ามิลลิวินาทีที่นับมาตั้งแต่ปี 1 มกราคม 1970 **ถ้าใช้งานเก็บค่าในฐานข้อมูลหรือไม่ใช่standaloneให้เปลี่ยนไปใช้ uuidจะดีกว่าเพื่อป้องกันidซ้ำกัน
-        amount: Number(amount),
-      };
   return (
     <>
         <form onSubmit={addList}>

@@ -2,16 +2,16 @@ import { useState } from "react";
 
 const Transection = (props) => {
     const { item } = props;
-    const [valid, setValid] = useState(false)
-    useEffect(() => {
-      setValid(amount.trim().length>0 && title.trim().length>0 && Number(amount)!=0)
-    }, [title,amount])
-    disabled = !valid
     const removeItem = (e) => {
         const id = e.target.getAttribute('name');
             props.deleteItem(id);
             
     };
+    const [Valid,setValid] = useState(false)
+        useEffect(()=>{
+        setValid(amount.trim().length>0 && title.trim().length>0 && Number(amount) !== 0)
+    },[title,amount])
+    disabled=!Valid
     const [incomes, setIncomes] = useState(0);
     const [expenses, setExpenses] = useState(0);
     useEffect(() => {
@@ -25,6 +25,11 @@ const Transection = (props) => {
         setIncomes(income);
         setExpenses(expense);
       }, [item]);
+    incomes=incomes
+    expenses= expenses 
+
+    const total = incomes + expenses
+    const stat = total<0 ? "reportexpense":"reportincome"
     return (
         <div>
             <ul className="item ">
@@ -39,13 +44,13 @@ const Transection = (props) => {
                     </li>
                 ))}
 
-                <li key={element.id}>
+                <li key={element.id}>////step9
                     <button onClick={removeItem} name={element.id}>
                         X
                     </button>
                 </li>
 
-                {item.map((element) => {
+                {item.map((element) => { ////step10
                 const stat = element.amount < 0 ? 'expenses' : 'income';
                 const mathsymbol = element.amount < 0 ? '-' : '+';          
                 return(
@@ -59,7 +64,7 @@ const Transection = (props) => {
                 )})}
             </ul>
 
-            <h4 >ยอดเงินคงเหลือ(บาท):</h4>
+            <h4 >ยอดเงินคงเหลือ(บาท):</h4> ////step11
             <h1><span className={stat}></span></h1>
              <div className="reportcontainer">
                  <div>
